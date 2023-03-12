@@ -1,0 +1,290 @@
+.enviro-bg {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+.enviro-hero-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 192px;
+    z-index: 3;
+    width: 380px;
+    height: 380px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    img {
+        position: relative;
+        width: 380px;
+        height: 380px;
+        box-shadow: 0px 30px 90px -20px #f13140;
+        border-radius: 25.8996px;
+    }
+    .shadow-effect {
+        content: "";
+        position: absolute;
+        width: 380px;
+        height: 380px;
+        opacity: 0.15;
+        border: 12.0248px solid #e72561;
+        box-sizing: border-box;
+        border-radius: 25.8996px;
+        left: -50px;
+        top: -40px;
+    }
+}
+.enviro-content {
+    position: relative;
+    z-index: 3;
+    margin-top: 180px;
+}
+.enviro-banner-2 {
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    padding: 64px 0;
+    .enviro-banner-2-content {
+        width: 49%;
+        color: $color-700;
+        h2 {
+            font-size: 40px;
+            line-height: 44px;
+            letter-spacing: -0.03em;
+            font-family: $font-extralight;
+            span {
+                font-family: $font-bold;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            font-family: $font-medium;
+            margin-top: 8px;
+        }
+        h3 {
+            margin-top: 32px;
+            font-size: 18px;
+            line-height: 26px;
+            font-family: $font-bold;
+        }
+    }
+}
+.enviro-cardbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    .enviro-card {
+        padding: 32px;
+        background: rgba(223, 231, 237, 0.3);
+        border: 3px solid rgba(231, 37, 97, 0.15);
+        box-sizing: border-box;
+        backdrop-filter: blur(2px);
+        border-radius: 24px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: $color-700;
+        width: calc(25% - 32px);
+        margin-right: 32px;
+        margin-bottom: 48px;
+        z-index: 4;
+        position: relative;
+        h4 {
+            font-size: 22px;
+            line-height: 26px;
+            font-family: $font-bold;
+        }
+        p {
+            max-width: 224px;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: $font-medium;
+        }
+        &:nth-child(4n + 1) {
+            margin-right: 0;
+        }
+        .enviro-card-icon {
+            width: 160px;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                object-fit: cover;
+            }
+        }
+        .card-img {
+            width: 160px;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 36px;
+        }
+    }
+    .enviro-cardbox-bg {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 0;
+        width: 100%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.enviro-cardbox-desciption {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    font-family: $font-bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: $color-700;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+}
+
+.enviro-banner-3 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    justify-content: space-between;
+    .enviro-banner-3-content {
+        width: 50%;
+        color: $color-700;
+        padding: 64px;
+        border: 4px dashed rgba(231, 37, 97, 0.15);
+        box-sizing: border-box;
+        border-radius: 24px;
+        h2 {
+            font-size: 40px;
+            line-height: 44px;
+            letter-spacing: -0.03em;
+            font-family: $font-extralight;
+            max-width: 420px;
+            span {
+                font-family: $font-bold;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            font-family: $font-medium;
+            margin-top: 8px;
+        }
+    }
+}
+.enviro-row {
+    position: relative;
+    z-index: 5;
+    margin: 140px 0;
+    .bordered-card {
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+        background: #dfe6ed;
+    }
+}
+@media (max-width: 992px) {
+    .enviro-banner-2-img {
+        width: 260px;
+    }
+    .enviro-cardbox .enviro-card {
+        width: calc(33% - 24px);
+        margin-right: 24px;
+        padding: 24px;
+        &:nth-child(4n + 1) {
+            margin-right: 24px;
+        }
+        &:nth-child(3n + 1) {
+            margin-right: 0;
+        }
+        h4 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+    .enviro-banner-2 .enviro-banner-2-content h2,
+    .enviro-banner-3 .enviro-banner-3-content h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .enviro-banner-3 .enviro-banner-3-content {
+        padding: 48px;
+    }
+    .enviro-banner-3-img {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+    .enviro-cardbox .enviro-card {
+        margin-bottom: 32px;
+    }
+}
+@media (max-width: 576px) {
+    .enviro-banner-2 {
+        flex-direction: column-reverse;
+    }
+    .enviro-banner-2-img {
+        width: 100%;
+        display: flex;
+        img {
+            width: 300px;
+            margin: auto;
+        }
+    }
+    .enviro-banner-2 .enviro-banner-2-content {
+        width: 100%;
+        h2 {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+    .enviro-cardbox .enviro-card {
+        margin-bottom: 32px;
+        margin-right: 16px;
+        margin-left: 16px;
+        width: 100%;
+        &:nth-child(3n + 1) {
+            margin-right: 16px;
+        }
+        &:nth-child(2n + 1) {
+            margin-right: 16px;
+        }
+    }
+    .enviro-banner-3-img {
+        width: 70%;
+    }
+    .enviro-banner-3 {
+        flex-direction: column-reverse;
+        margin-top: 40px;
+        .enviro-banner-3-content {
+            width: 100%;
+            h2 {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+    }
+    .enviro-row .bordered-card {
+        width: 100%;
+    }
+    .enviro-banner-3 .enviro-banner-3-content {
+        padding: 32px;
+    }
+}

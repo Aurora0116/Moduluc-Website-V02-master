@@ -1,0 +1,49 @@
+.main {
+    background-color: $color-100;
+}
+.museums-hero {
+    position: relative;
+    min-height: 1080px;
+    padding-top: 90px;
+    img {
+        z-index: 1;
+        width: 100%;
+        object-fit: contain;
+        pointer-events: none;
+    }
+}
+.soution-card-5.card-rtd {
+    margin-top: 140px;
+    flex-direction: row-reverse;
+}
+.museums-row {
+    position: relative;
+    height: 485px;
+    margin: 140px 0;
+    .bordered-card {
+        position: absolute;
+        left: 100px;
+        width: 745px;
+    }
+}
+
+@media (max-width: 992px) {
+    .museums-hero {
+        min-height: auto;
+        margin-top: 90px;
+    }
+    .solution-card-1 .card-box {
+        padding: 64px;
+    }
+}
+
+@media (max-width: 576px) {
+    .soution-card-5.card-rtd {
+        margin-top: 140px;
+        flex-direction: column;
+    }
+    .museums-hero {
+        min-height: auto;
+        margin-top: 240px;
+    }
+}

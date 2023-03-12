@@ -1,0 +1,499 @@
+.airia-row {
+    margin-top: 404px;
+    position: relative;
+    z-index: 3;
+    height: 674px;
+}
+.airia-card-1 {
+    padding: 96px;
+    background: $color-100;
+    box-shadow: $shadow-light-main--lg;
+    border-radius: 24px;
+    position: absolute;
+    width: 580px;
+    z-index: 4;
+    h2 {
+        font-size: 40px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: $color-primary-light;
+        font-family: $font-bold;
+    }
+    p {
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: -0.03em;
+        font-family: $font-extralight;
+        color: $color-primary-light;
+    }
+}
+.airia-card-2 {
+    padding: 96px;
+    background: $color-100;
+    box-shadow: $shadow-light-main--lg;
+    border-radius: 24px;
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    width: 680px;
+    z-index: 3;
+    color: $color-700;
+    svg {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -40px;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: -0.03em;
+        font-family: $font-extralight;
+        span {
+            font-family: $font-bold;
+        }
+    }
+    p {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: $font-medium;
+    }
+}
+
+.airia-row-2 {
+    .bordered-card {
+        width: 544px;
+        margin-right: auto;
+        margin-left: auto;
+        .border-card {
+            .card-content {
+                text-align: center;
+                padding: 48px 96px;
+                h3 {
+                    font-size: 32px;
+                    line-height: 36px;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+.airaia-card-group {
+    padding: 100px;
+    border: 4px solid rgba(231, 37, 97, 0.1);
+    box-sizing: border-box;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+    color: $color-700;
+    margin: 144px 0;
+    h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: -0.03em;
+        color: $color-700;
+        font-family: $font-bold;
+        &.title {
+            margin-bottom: 64px;
+        }
+    }
+
+    .airaia-card-row {
+        margin-bottom: 96px;
+        .airaia-card {
+            padding: 96px;
+            background: $color-100;
+            box-shadow: $shadow-light-main--lg;
+            border-radius: 24px;
+            position: relative;
+            svg {
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translate(-50%, -50%);
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                font-family: $font-medium;
+            }
+        }
+        &:nth-child(2) {
+            .airaia-card {
+                width: 680px;
+                margin-left: 200px;
+            }
+        }
+        &:nth-child(3) {
+            .airaia-card {
+                width: 580px;
+                margin-left: 0;
+            }
+        }
+        &:nth-child(4) {
+            .airaia-card {
+                width: 580px;
+                margin-left: 200px;
+            }
+        }
+    }
+}
+.airaia-banner-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    position: relative;
+    .banner-conetnt {
+        padding: 96px;
+        border: 4px dashed rgba(231, 37, 97, 0.15);
+        box-sizing: border-box;
+        border-radius: 24px;
+        backdrop-filter: blur(4px);
+        background-color: $color-100;
+        h2 {
+            font-size: 40px;
+            line-height: 44px;
+            font-family: $font-bold;
+            color: $color-700;
+            margin-bottom: 24px;
+        }
+    }
+}
+.airaia-row-3 {
+    height: 280px;
+    margin-right: 100px;
+    margin-left: 100px;
+    position: relative;
+    .airaia-card-2 {
+        padding: 56px;
+        background-color: $color-100;
+        box-shadow: $shadow-light-main;
+        position: absolute;
+        border-radius: 24px;
+        svg {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -50%);
+        }
+        &:first-child {
+            left: 0;
+            top: 0;
+            width: 480px;
+            z-index: 3;
+        }
+        &:last-child {
+            margin-top: 96px;
+            width: 380px;
+            right: 0;
+            top: 0;
+            z-index: 2;
+        }
+    }
+    h3 {
+        font-family: $font-medium;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: $color-700;
+        span {
+            font-family: $font-bold;
+        }
+    }
+}
+.airaia-card-row-3 {
+    .airaia-card-3 {
+        width: 680px;
+        padding: 32px 64px 32px 48px;
+        background: rgba(223, 231, 237, 0.3);
+        border: 3px solid rgba(231, 37, 97, 0.15);
+        box-sizing: border-box;
+        backdrop-filter: blur(2px);
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        .card-image {
+            width: 200px;
+        }
+        .card-content {
+            width: calc(100% - 248px);
+            margin-left: 48px;
+            h3 {
+                font-size: 22px;
+                line-height: 26px;
+                font-family: $font-bold;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                font-family: $font-medium;
+            }
+        }
+    }
+    &:last-child {
+        margin-top: 64px;
+        .airaia-card-3 {
+            width: 580px;
+            flex-direction: row-reverse;
+            margin-left: auto;
+            justify-content: space-between;
+            .card-content {
+                margin-left: 0;
+                width: calc(100% - 200px);
+            }
+        }
+    }
+}
+.airaia-features {
+    display: flex;
+    .features-card {
+        padding: 56px 56px 72px;
+        background: $color-100;
+        box-shadow: $shadow-light-main--sm;
+        border-radius: 24px;
+        width: 25%;
+        text-align: center;
+        position: relative;
+        h5 {
+            font-size: 16px;
+            line-height: 24px;
+            font-family: $font-bold;
+            color: $color-700;
+            margin-top: 8px;
+        }
+        &:nth-child(1) {
+            z-index: 4;
+        }
+        &:nth-child(2) {
+            z-index: 3;
+        }
+        &:nth-child(3) {
+            z-index: 2;
+        }
+        &:nth-child(4) {
+            z-index: 1;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .airia-card-1 {
+        padding: 64px;
+        h2 {
+            font-size: 32px;
+            line-height: 36px;
+        }
+        p {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+    .airia-card-2 {
+        padding: 64px;
+        width: 466px;
+        top: 320px;
+        right: 202px;
+        svg {
+            width: 64px;
+            height: 64px;
+        }
+        h2 {
+            font-size: 32px;
+            line-height: 36px;
+        }
+    }
+    .airia-title h1 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .airia-row-2 {
+        .bordered-card {
+            .border-card .card-content {
+                text-align: center;
+                padding: 32px 48px;
+            }
+        }
+    }
+    .airaia-card-group .airaia-card-row .airaia-card svg {
+        width: 64px;
+        height: 64px;
+    }
+    .bordered-card .border-card .card-content h3 span {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .airaia-card-group .airaia-card-row:nth-child(2) .airaia-card {
+        width: 530px;
+        margin-left: auto;
+    }
+    .airaia-card-group h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .airaia-card-group {
+        padding: 64px;
+    }
+    .airaia-card-group .airaia-card-row .airaia-card {
+        padding: 64px;
+    }
+    .airaia-card-group .airaia-card-row:nth-child(4) .airaia-card {
+        margin-left: auto;
+    }
+    .airaia-banner-2 .banner-conetnt {
+        padding: 48px;
+    }
+    .airaia-banner-2 .banner-conetnt h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .banner-img {
+        width: 400px;
+        height: 400px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .airia-title img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-27%);
+        top: 0;
+        z-index: 1;
+    }
+    .airaia-row-3 {
+        height: 350px;
+        margin-right: 0;
+        margin-left: 0;
+        position: relative;
+    }
+    .airaia-row-3 .airaia-card-2:last-child {
+        margin-top: 236px;
+    }
+    .airaia-card-row-3 .airaia-card-3 {
+        width: 100%;
+    }
+    .airaia-card-row-3 .airaia-card-3 .card-image {
+        width: 160px;
+        img {
+            width: 100%;
+        }
+    }
+    .airaia-card-row-3 .airaia-card-3 .card-content {
+        width: calc(100% - 196px);
+        margin-left: 32px;
+    }
+    .airaia-card-row-3:last-child .airaia-card-3 {
+        width: 100%;
+    }
+    .airaia-card-group .airaia-card-row .airaia-card {
+        width: 100% !important;
+    }
+    .airia-row {
+        margin-top: 280px;
+    }
+    .airaia-features {
+        flex-wrap: wrap;
+        .features-card {
+            width: 50%;
+            svg {
+                width: 44px;
+                height: 44px;
+            }
+        }
+    }
+}
+@media (max-width: 762px) {
+    .airia-card-1 {
+        width: 100%;
+        padding: 48px;
+        h2 {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+    .airia-card-2 {
+        padding: 48px;
+        width: 100%;
+        top: 320px;
+        right: 0;
+        h2 {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+    .airia-row-2 .bordered-card {
+        width: 100%;
+    }
+    .airia-row-2 .bordered-card .border-card .card-content {
+        text-align: center;
+        padding: 24px 48px;
+    }
+    .airia-title h1 {
+        font-size: 32px;
+        line-height: 36px;
+        padding-left: 16px;
+    }
+    .airaia-card-group {
+        padding: 36px 24px;
+        h2 {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+    .airaia-card-group .airaia-card-row .airaia-card {
+        padding: 48px !important;
+        svg {
+            width: 56px !important;
+            height: 56px !important;
+        }
+    }
+    .airaia-banner-2 {
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+    .airaia-banner-2 .banner-conetnt {
+        width: 100%;
+    }
+    .airaia-row-3 .airaia-card-2:first-child,
+    .airaia-row-3 .airaia-card-2:last-child {
+        width: 100%;
+    }
+    .airaia-card-row-3 .airaia-card-3 {
+        width: 100%;
+        flex-direction: column;
+    }
+    .airaia-card-row-3 .airaia-card-3 {
+        padding: 24px 16px;
+        .card-content {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+    .airaia-card-row-3:last-child .airaia-card-3 {
+        width: 100%;
+        flex-direction: column;
+    }
+    .airaia-card-row-3:last-child .airaia-card-3 .card-content {
+        margin-left: 0;
+        width: 100%;
+    }
+    .airaia-features .features-card {
+        width: 100%;
+        svg {
+            width: 44px;
+            height: 44px;
+        }
+    }
+    .airia-row {
+        margin-top: 256px;
+    }
+}

@@ -1,0 +1,91 @@
+.footer-content {
+    max-width: 1090px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+    height: 330px;
+    z-index: 4;
+    img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+    }
+    .footer-linker {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin-top: 30px;
+        padding: 32px 48px;
+        border-radius: 24px;
+        cursor: pointer;
+        box-shadow: 10px 5px 15px transparent;
+        h5 {
+            font-size: 24px;
+            line-height: 28px;
+            font-family: $font-bold;
+            color: $color-700;
+        }
+        svg {
+            margin-top: 11px;
+            transform: translateX(0);
+            transition: transform 0.3s;
+        }
+        transition: all 0.3s;
+        &:hover {
+            box-shadow: 10px 5px 15px rgba(192, 207, 217, 0.9), -10px -5px 15px rgba(247, 249, 251, 0.6);
+            a {
+                h5 {
+                    color: $color-primary-light;
+                    transition: all 0.3s;
+                }
+            }
+            svg {
+                transform: translateX(10px);
+                transition: transform 0.3s;
+                * {
+                    stroke: $color-primary-light;
+                }
+            }
+        }
+    }
+}
+footer {
+    position: relative;
+}
+@media (max-width: 768px) {
+    .footer-content img {
+        // transform: translateX(-59%) rotate(-9deg);
+        bottom: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-content {
+        img {
+            display: none;
+        }
+        .footer-linker {
+            margin-top: 50px;
+        }
+    }
+    .footer-bg {
+        position: absolute;
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
+        height: 230px;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        background: #dfe7ed;
+        box-shadow: 0px 30px 90px rgb(192 207 217 / 90%);
+        border-radius: 24px 24px 0px 0px;
+    }
+    .footer-content .footer-linker h5 {
+        font-size: 20px;
+    }
+}

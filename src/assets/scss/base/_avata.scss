@@ -1,0 +1,111 @@
+.avata-row {
+    height: 478px;
+    margin-top: 404px;
+    position: relative;
+    width: 100%;
+    .solution-card-2 {
+        position: absolute;
+        left: 0;
+        right: auto;
+        top: 0;
+        position: absolute;
+        width: 480px;
+        z-index: 3;
+    }
+    .solution-card-1 {
+        position: absolute;
+        right: 0;
+        left: auto;
+        top: 145px;
+        width: 580px;
+        z-index: 2;
+    }
+}
+.avata-row-1 {
+    margin-top: 140px;
+    .solution-card-2 {
+        margin-left: 100px;
+        width: 580px;
+        margin-right: auto;
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.avata-row-2 {
+    margin: 140px 0;
+    .solution-card-1 {
+        margin-left: auto;
+        width: 580px;
+        margin-right: 100px;
+        &::after {
+            left: 20px;
+            top: 20px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .solution-card-2,
+    .solution-card-1 {
+        position: relative !important;
+        svg {
+            width: 64px;
+            height: 64px;
+        }
+        .card-box {
+            padding: 64px;
+            h2 {
+                font-size: 32px;
+                line-height: 36px;
+            }
+        }
+    }
+    .avata-row {
+        height: auto !important;
+        .solution-card-1 {
+            top: auto;
+            bottom: 0;
+            margin-left: auto;
+            margin-top: 140px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .solution-card-2,
+    .solution-card-1 {
+        width: 100% !important;
+        svg {
+            width: 56px;
+            height: 56px;
+        }
+        &::after {
+            display: none;
+        }
+        .card-box {
+            padding: 64px;
+            h2 {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+    }
+    .avata-row {
+        margin-top: 180px;
+        height: auto !important;
+        .solution-card-1 {
+            top: auto;
+            bottom: 0;
+            margin-left: auto;
+            margin-top: 140px;
+        }
+    }
+    .avata-row-1 .solution-card-2 {
+        margin-left: 0;
+    }
+    .avata-row-2 .solution-card-1 {
+        margin-left: 0;
+    }
+}
